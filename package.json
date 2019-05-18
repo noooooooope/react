@@ -1,0 +1,30 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": "movie",
+  "main": "index.js",
+  "author": "test",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "scripts": {
+    "gyA": "babel ./dev -d ./",
+    "pregyA": "echo begin babel...",
+    "postgyA": "browserify ./index.js -o ./bundle.js",
+    "minJS": "uglifyjs ./bundle.js -o ./bundle-min.js"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "jQuery": "latest"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
